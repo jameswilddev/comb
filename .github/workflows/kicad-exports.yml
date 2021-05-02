@@ -1,0 +1,21 @@
+name: KiCAD Exports
+on: [push]
+
+jobs:
+  make:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+      config: docs.kibot.yaml
+    - uses: INTI-CMNB/KiBot@v0.7.0
+      with:
+        config: kibot.yaml
+    - run: find
+    - uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: |
+          example/ntsc.hex
+          example/pal-60.hex
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
