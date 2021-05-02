@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nerdyscout/kicad-exports@v2.3
       with:
-        config: gerbers.kibot.yaml gerbers.stencil.kibot.yaml docs.board.kibot.yaml docs.schema.kibot.yaml bom.ibom.kibot.yaml step.kibot.yaml octopart/bom.csv.kibot.yaml jlcpcb/bom.csv.kibot.yaml jlcpcb/position.kibot.yaml jlcpcb/plot.green-enig.kibot.yaml
+        config: docs.board.kibot.yaml docs.schema.kibot.yaml jlcpcb/plot.green-hasl.kibot.yaml compress.documentation.kibot.yaml gerbers.kibot.yaml gerbers.stencil.kibot.yaml jlcpcb/bom.csv.kibot.yaml jlcpcb/position.kibot.yaml compress.fabrications.kibot.yaml
         schema: 'comb-arcade-breakout-board/comb-arcade-breakout-board.sch'
         board: 'comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb'
         verbose: 1
