@@ -21,6 +21,11 @@ fp-info-cache
 *.dsn
 *.ses
 
+# Ploting outputs
+*.gbr
+*.drl
+*.gbrjob
+
 # Exported BOM files
 *.xml
 *.csv
