@@ -11,7 +11,6 @@ jobs:
         config: docs.board.kibot.yaml docs.schema.kibot.yaml jlcpcb/plot.green-hasl.kibot.yaml compress.documentation.kibot.yaml gerbers.kibot.yaml gerbers.stencil.kibot.yaml jlcpcb/bom.csv.kibot.yaml jlcpcb/position.kibot.yaml compress.fabrications.kibot.yaml
         schema: 'comb-arcade-breakout-board/comb-arcade-breakout-board.sch'
         board: 'comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb'
-        verbose: 1
     - run: find
     - uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
