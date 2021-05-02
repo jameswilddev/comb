@@ -9,8 +9,8 @@ jobs:
     - uses: nerdyscout/kicad-exports@v2.3
       with:
         config: kibot.yaml
-        schema: 'comb-arcade-breakout-board/comb-arcade-breakout-board.sch'
-        board: 'comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb'
+        schema: '**/*.sch'
+        board: '**/*.kicad_pcb'
     - run: find
     - uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
