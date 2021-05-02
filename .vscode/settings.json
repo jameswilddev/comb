@@ -1,0 +1,36 @@
+{
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [
+    80
+  ],
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".DS_Store": true,
+    "**/.git": true,
+    "**/*.000": true,
+    "**/*.bak": true,
+    "**/*.bck": true,
+    "**/*.kicad_pcb-bak": true,
+    "**/*.sch-bak": true,
+    "**/*~": true,
+    "**/_autosave-*": true,
+    "**/*.tmp": true,
+    "**/*-save.pro": true,
+    "**/*-save.kicad_pcb": true,
+    "**/fp-info-cache": true,
+    "**/*.net": true,
+    "**/*.dsn": true,
+    "**/*.ses": true,
+    "**/*.gbr": true,
+    "**/*.drl": true,
+    "**/*.gbrjob": true,
+    "**/*.xml": true,
+    "**/*.csv": true
+  }
+}
