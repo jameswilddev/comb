@@ -79,3 +79,9 @@ make deploy-deathmatch-tennis PROGRAMMER=avrisp BAUD=19200 PART=M328P PORT=/dev/
 - A Unix-like environment.
 - Make.
 - AVRDUDE on the PATH.
+
+### Electrical considerations
+
+The default pin mapping avoids using the SPI pins for inputs as activating an arcade input connects it directly to ground - which could damage the ATMega328P and/or the connected programmer.  Conveniently, the SPI pins overlap with the pins needed for video output, which does not pose such a short circuit hazard.
+
+If a bootloader is used, PD0/PD1 will be used instead (TX/RX).  Do not short these pins to ground during programming.
