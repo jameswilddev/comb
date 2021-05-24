@@ -241,7 +241,7 @@ TILT
 Text GLabel 6050 3900 0    50   Output ~ 0
 P2_CREDIT
 Text GLabel 6050 3700 0    50   Output ~ 0
-FREE_CREDIT
+SERVICE
 $Comp
 L power:GND #PWR0117
 U 1 1 60900785
@@ -346,7 +346,7 @@ $EndComp
 Text GLabel 4250 3800 0    50   Input ~ 0
 TEST
 Text GLabel 4250 3700 0    50   Input ~ 0
-FREE_CREDIT
+SERVICE
 Text GLabel 4250 3900 0    50   Input ~ 0
 TILT
 $Comp
