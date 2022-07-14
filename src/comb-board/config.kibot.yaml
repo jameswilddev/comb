@@ -1,0 +1,16 @@
+kibot:
+  version: 1
+
+preflight:
+  check_zone_fills: true
+  erc_warnings: true
+  run_drc: true
+  run_erc: true
+
+outputs:
+- type: gerber
+  name: gerber
+  dir: dist/comb-board
+- type: excellon
+  name: excellon
+  dir: dist/comb-board

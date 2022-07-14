@@ -8,12 +8,12 @@ jobs:
     - uses: neomura/setup-avra-cli-action@v1.0.1
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
-        config: config.kibot.yaml
+        config: src/comb-arcade-breakout-board/config.kibot.yaml
         schema: src/comb-arcade-breakout-board/comb-arcade-breakout-board.sch
         board: src/comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
-        config: config.kibot.yaml
+        config: src/comb-board/config.kibot.yaml
         schema: src/comb-board/comb-board.sch
         board: src/comb-board/comb-board.kicad_pcb
     - uses: softprops/action-gh-release@v1
