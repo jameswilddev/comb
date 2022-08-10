@@ -11,17 +11,18 @@ jobs:
         config: src/comb-arcade-breakout-board/config.kibot.yaml
         schema: src/comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_sch
         board: src/comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb
+    - run: zip -r dist/comb-arcade-breakout-board.zip dist/comb-arcade-breakout-board
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
         config: src/comb-board/config.kibot.yaml
         schema: src/comb-board/comb-board.kicad_sch
         board: src/comb-board/comb-board.kicad_pcb
-    - run: ls dist/comb-board
+    - run: zip -r dist/comb-board.zip dist/comb-board
     - uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: |
-          *.zip
+          dist/*.zip
           dist/*.hex
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
