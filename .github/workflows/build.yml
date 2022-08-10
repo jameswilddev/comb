@@ -16,7 +16,7 @@ jobs:
         config: src/comb-board/config.kibot.yaml
         schema: src/comb-board/comb-board.kicad_sch
         board: src/comb-board/comb-board.kicad_pcb
-    - run: ls dist
+    - run: ls dist/comb-board
     - uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
