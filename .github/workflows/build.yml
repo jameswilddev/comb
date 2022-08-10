@@ -6,6 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: neomura/setup-avra-cli-action@v1.0.3
+    - run: mkdir -p dist
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
         config: src/comb-arcade-breakout-board/config.kibot.yaml
