@@ -7,13 +7,13 @@ jobs:
     - uses: actions/checkout@v3
     - uses: neomura/setup-avra-cli-action@v1.0.3
     - run: mkdir -p dist
-    - uses: INTI-CMNB/KiBot@v2_k6
+    - uses: INTI-CMNB/KiBot@v2
       with:
         config: src/comb-arcade-breakout-board/config.kibot.yaml
         schema: src/comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_sch
         board: src/comb-arcade-breakout-board/comb-arcade-breakout-board.kicad_pcb
     - run: zip -r dist/comb-arcade-breakout-board.zip dist/comb-arcade-breakout-board
-    - uses: INTI-CMNB/KiBot@v2_k6
+    - uses: INTI-CMNB/KiBot@v2
       with:
         config: src/comb-board/config.kibot.yaml
         schema: src/comb-board/comb-board.kicad_sch
