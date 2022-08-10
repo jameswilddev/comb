@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v3
-    - uses: neomura/setup-avra-cli-action@v1.0.1
+    - uses: neomura/setup-avra-cli-action@v1.0.3
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
         config: src/comb-arcade-breakout-board/config.kibot.yaml
