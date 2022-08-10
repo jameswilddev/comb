@@ -4,7 +4,7 @@ jobs:
   make:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: neomura/setup-avra-cli-action@v1.0.1
     - uses: INTI-CMNB/KiBot@v2_k6
       with:
