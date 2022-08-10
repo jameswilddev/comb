@@ -32,6 +32,8 @@
     "**/*.gbrjob": true,
     "**/*.xml": true,
     "**/*.csv": true,
-    "**/*-cache.lib": true
+    "**/*-cache.lib": true,
+    "**/*-backups": true,
+    "**/*.kicad_prl": true
   }
 }
