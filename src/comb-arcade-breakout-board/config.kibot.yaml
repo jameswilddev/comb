@@ -11,6 +11,7 @@ outputs:
 - type: gerber
   name: gerber
   dir: dist/comb-arcade-breakout-board
+  layers: all
 - type: excellon
   name: excellon
   dir: dist/comb-arcade-breakout-board
